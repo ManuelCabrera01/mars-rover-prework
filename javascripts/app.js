@@ -1,12 +1,12 @@
 // Rover Object Goes Here
-var rover = {
+const rover = {
   name: "R1",
   x: 0,
   y: 0,
   direction: "N"
 };
 
-let travelLog = [];
+const travelLog = [];
 
 turnLeft = rover => {
   switch (rover.direction) {
@@ -59,7 +59,7 @@ moveForward = rover => {
 };
 
 commandList = commands => {
-  for (var i = 0; i < commands.length; i++) {
+  for (let i = 0; i < commands.length; i++) {
     if (commands[i] === "f") {
       moveForward(rover);
     } else if (commands[i] === "l") {
