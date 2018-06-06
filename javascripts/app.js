@@ -72,4 +72,5 @@ commandList = commands => {
 
 let guide = ["f", "f", "r", "f", "r", "f", "f", "f"];
 commandList(guide);
+//testing
 console.log(travelLog);
